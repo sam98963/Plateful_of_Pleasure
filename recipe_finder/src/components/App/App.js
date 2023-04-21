@@ -14,16 +14,16 @@ async function getRecipe() {
 getRecipe();
 */
 
-
-
 import React from "react";
 import SearchRecipe from "../SearchRecipe/index.js";
-import './App.css';
+import "./App.css";
+import RecipeList from "../RecipeList/index.js";
 
 function App() {
   return (
     <div className="App">
-    <SearchRecipe />
+      <SearchRecipe />
+      <RecipeList />
     </div>
   );
 }
