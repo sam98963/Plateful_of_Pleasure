@@ -6,8 +6,9 @@
 //
 
 import { useState } from "react";
+import './searchRecipe.css'
 
-function SearchRecipe({getRecipe, addToList}) {
+function SearchRecipe({ getRecipe, addToList }) {
   const [search, setSearch] = useState("");
 
   return (

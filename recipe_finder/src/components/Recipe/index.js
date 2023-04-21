@@ -1,11 +1,12 @@
-function Recipe() {
+import './Recipe.css'
+
+
+
+function Recipe({ id, title, image }) {
   return (
     <div id="recipe">
-      <h2>Baked salmon with fennel & tomatoes</h2>
-      <img
-        src="https://www.themealdb.com/images/media/meals/1548772327.jpg"
-        alt="Baked salmon with fennel & tomatoes"
-      ></img>
+      <h2>{title}</h2>
+      <img src={image} alt={title}></img>
     </div>
   );
 }
