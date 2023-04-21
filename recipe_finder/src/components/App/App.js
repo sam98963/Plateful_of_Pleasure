@@ -15,26 +15,37 @@ async function getRecipe() {
 getRecipe();
 */
 
+
+// Take api object and save in a resultsList useState
+
 import React, { useState } from "react";
 import SearchRecipe from "../SearchRecipe/index.js";
 import "./App.css";
 import RecipeList from "../RecipeList/index.js";
 
 // API function
-async function getRecipe(search) {
-  let response = await fetch(
-    `https://www.themealdb.com/api/json/v1/1/filter.php?i=${search}`
-  );
-  let data = response.json();
-  console.log(data);
-}
 
-getRecipe();
 
 function App() {
+  const [resultsList, setresultsList] = useState([])
+  // Function that will add our data to the array 
+
+  async function getRecipe(search) {
+    let response = await fetch(
+      `https://www.themealdb.com/api/json/v1/1/filter.php?i=${search}`
+    );
+    let data = await response.json();
+    let mealSuggestions = data.meals
+    setresultsList([...mealSuggestions])
+  }
+  
+  console.log(resultsList)
+  
+
   return (
     <div className="App">
-      <SearchRecipe getRecipe={getRecipe} />
+    
+      <SearchRecipe getRecipe={getRecipe}/>
       <RecipeList />
     </div>
   );

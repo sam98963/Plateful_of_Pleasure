@@ -7,10 +7,8 @@
 
 import { useState } from "react";
 
-function SearchRecipe({getRecipe}) {
+function SearchRecipe({getRecipe, addToList}) {
   const [search, setSearch] = useState("");
-
-  console.log(search);
 
   return (
     <div>
