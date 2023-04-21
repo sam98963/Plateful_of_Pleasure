@@ -21,6 +21,7 @@ import React, { useState } from "react";
 import SearchRecipe from "../SearchRecipe/index.js";
 import "./App.css";
 import RecipeList from "../RecipeList/index.js";
+import logo from "./assets/logo.png";
 
 // API function
 
@@ -41,8 +42,11 @@ function App() {
 
   return (
     <div className="App">
-    <h1>Plateful of Pleasure</h1>
-    <p>To minimise food waste and maximise food based joy.</p>
+      <section>
+        <img src={require("./assets/logo2.png")} alt="logo" />
+        <h1>Plateful of Pleasure</h1>
+      </section>
+      <p>To minimise food waste and maximise food based joy.</p>
       <SearchRecipe getRecipe={getRecipe} />
       <RecipeList resultsList={resultsList} />
     </div>
