@@ -14,11 +14,12 @@ import './recipeList.css'
 function RecipeList({ resultsList }) {
   return (
     <div id="recipe-list">
-      <h1>Here are our suggestions:</h1>
+      <h2>Here are our suggestions:</h2>
+      <div id="list">
       {resultsList.map((e) => (
         <Recipe id={e.idMeal} title={e.strMeal} image={e.strMealThumb} />
       ))}
-      ;
+      </div>
     </div>
   );
 }

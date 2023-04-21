@@ -1,0 +1,16 @@
+#search-recipe {
+    border: 1px solid #ccc;
+}
+label {
+    margin: 10px 10px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    margin: 10px 10px;
+}
+
+button {
+    margin-left: 20px;
+}

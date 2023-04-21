@@ -41,6 +41,8 @@ function App() {
 
   return (
     <div className="App">
+    <h1>Plateful of Pleasure</h1>
+    <p>To minimise food waste and maximise food based joy.</p>
       <SearchRecipe getRecipe={getRecipe} />
       <RecipeList resultsList={resultsList} />
     </div>

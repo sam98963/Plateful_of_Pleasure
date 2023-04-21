@@ -6,17 +6,18 @@
 //
 
 import { useState } from "react";
-import './searchRecipe.css'
+import "./searchRecipe.css";
 
 function SearchRecipe({ getRecipe, addToList }) {
   const [search, setSearch] = useState("");
 
   return (
-    <div>
+    <div id="search-recipe">
       <label>
         Search Recipes:
         <input
           type="text"
+          placeholder="e.g. chicken"
           onChange={(e) => {
             setSearch(e.target.value);
           }}

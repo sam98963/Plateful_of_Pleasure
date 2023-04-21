@@ -1,6 +1,4 @@
-import './Recipe.css'
-
-
+import "./recipe.css";
 
 function Recipe({ id, title, image }) {
   return (
