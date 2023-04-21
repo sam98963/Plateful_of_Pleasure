@@ -16,13 +16,14 @@ getRecipe();
 
 
 
-
+import React from "react";
+import SearchRecipe from "../SearchRecipe/index.js";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      
+    <SearchRecipe />
     </div>
   );
 }
