@@ -1,25 +1,31 @@
-# React-athon
+# Week 6 - Frontend Project - Plateful of Pleasure
 
-## Task 1 - API Research (20 - 30 mins) ✅
+A front-end only app allowing users to input an ingredient and recieve a number of meal ideas using that ingredient.
 
-Choose at least one external API to fetch data from that you'll then use in your React app. This [list](https://apilist.fun) may help. Remember to read the API's documentation and send test requests from Postman to view the data you get back first before deciding it's suitable to use. You can always use the API list we used in the hackathon earlier in the course as well.
+### Screenshots
 
 
-- "https://www.themealdb.com/api/json/v1/1/random.php" Recipe API chosen
-## Task 2 - Ideate and Plan (30 - 60 mins)
+### Motivation
 
-- Once you choose an API and test it out ✅, use Disney ideation to come up with an idea of what you want to build - what problem are you solving? Who are your users, and what do they need? Set a timer for each room (dreamer, realist, and critic). ✅
-- Boil down what your MVP is and what then becomes stretch goals. Break down your idea into its component parts and prioritise your tasks. Use project management software like [Trello](https://trello.com/en) to organize your plan, breaking it down into tasks that you can then treat as tickets for each feature. Base each of these around a [user story](https://www.atlassian.com/agile/project-management/user-stories).
-- Create a component tree with state and behaviour for each component and at least low-fidelity wireframes for your design.
+For this project we had to use an api of our choice to make an app of our choice. We collectively decided on a recipe app and read into the api, which allowed requests based on an ingredient.
 
-## Task 3 - Build your MVP
+### Lessons learned
 
-Build the simplest version of your app (just enough features to be useable). Make regular commits as you build, and practice branching off for each component and merging that branch in. Use the React hooks and tools we've looked at over the past weeks where appropriate.
+- How to fetch from an api using variables
+- Mapping data onto a component.
 
-## Stretch Goals
+### Tech Stack
 
-Once your MVP is functioning and if you have time left, focus on what features you are going to build next - iterate through your planned stretch goals one by one. Again, make use of feature branching and atomic commits (committing often after each change).
+- React
+- Javascript
+- CSS
 
-## Retro
+### Improvements
 
-You'll be presenting your apps to each other, and each team member should be prepared to present about their app so an end of day wrap-up is a good idea. This is a good time to practice an [agile retrospective](https://www.atlassian.com/team-playbook/plays/retrospective) - leave time before presentations to discuss what you did well today, what you learned, what you might do differently next time, and actions you can take forward into your project next week.
+If we had time, we would have added a second fetch, if a particular meal was clicked, to the open another page or popup revealing the full recipe. Similarly, I would have improved the colour scheme, and the styling too, making it a little more slick and thematic.
+
+### Usage
+1. Follow [this link]().
+2. Enter an ingredient, please make sure the spelling is accurate.
+3. Scroll through and see what meals you can make.
+
