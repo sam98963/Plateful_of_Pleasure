@@ -21,7 +21,6 @@ import React, { useState } from "react";
 import SearchRecipe from "../SearchRecipe/index.js";
 import "./App.css";
 import RecipeList from "../RecipeList/index.js";
-import logo from "./assets/logo.png";
 
 // API function
 
